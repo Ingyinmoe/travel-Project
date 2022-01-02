@@ -426,3 +426,14 @@
         margin-right: 90px;
     }
 }
+
+/* ------------ small device 1--------------- */
+@media  screen and (max-width : 400px){
+    .reg-btn{
+        margin-left: 63%;
+    }
+
+    .make-btn {
+        margin-bottom: 25px;
+    }
+}
