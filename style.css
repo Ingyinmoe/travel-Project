@@ -44,6 +44,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 0;
+    background-color: #fff;
 }
 
 .nav-ul li{
@@ -340,13 +341,163 @@
 
 .media ul li a{
     text-decoration: none;
-    color: #f22534;
+    color: #333;
     font-size: 20px;
     cursor: pointer;
 }
 
 .media p{
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Rubik:wght@500&display=swap');
+/* for title */
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+/* for p */
+/* font-family: 'Rubik', sans-serif; */
+
+/* ---------------- list page--------- */
+.list-page{
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-page .left-page{
+    flex-basis: 70%;
+}
+
+.list-page .right-page{
+    flex-basis: 25%;
+}
+
+.left-page p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #555;
+}
+
+.left-page h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.house{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-top: 1px solid #333;
+    padding: 10px 0;
+}
+
+.house .left-img{
+    flex-basis: 45%;
+}
+
+.house .left-txt{
+    flex-basis: 50%;
+}
+
+.house .left-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.house .left-txt p{
+    font-family: 'Rubik', sans-serif;
+    color: #555;
+    font-size: 18px;
+}
+
+.house .left-txt h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.house .left-txt i{
+    margin: 4px 0;
+    color: #ff5361;
+    font-size: 19px;
+}
+
+.left-guest{
+    text-align: right;
+    margin-top: 16px;
+}
+
+.left-guest span{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* --------------- side bar------------------- */
+
+.side-bar{
+    margin-top: 40px;
+    padding: 15px 20px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.side-bar h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.side-bar h4{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 12px 0;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+}
+
+.filter p{
+    padding: 4px 10px;
+}
+
+.check p , .filter span{
+    font-family: 'Rubik', sans-serif;
+}
+
+.side-bar a{
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    color: #555;
+    padding-left: 68%;
+}
+
+/* --------- paage number--------- */
+
+.number-line{
+    text-align: center;
+}
+
+.number-line span{
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: #333;
 }
 
 
@@ -435,5 +586,20 @@
 
     .make-btn {
         margin-bottom: 25px;
+    }
+
+    .list-page{
+        margin: 80px 0;
+    }
+    .house .left-img,.house .left-txt,.list-page .left-page,.list-page .right-page{
+        flex-basis: 100%;
+        display: block;
+    }
+    .house .left-txt i{
+        font-size: 15px;
+    }
+    .number-line span{
+        margin: 5px 5px;
+        padding: 5px 5px;
     }
 }
